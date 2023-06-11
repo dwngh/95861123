@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example</title>
+    </head>
+    <body>
+        <h1>You can conceal the "thing" to any html. However you need some essential parts below</h1>
+        <ul>
+            <li>
+                A div  with id <b>95861123</b> to contain the query result
+            </li>
+            <li>
+                An input tag with id <b>95861124</b> for input
+            </li>
+            <li>
+                A button to handle querying
+            </li>
+        </ul>
+        
+        <div id="95861123"></div>
+        <input id="95861124" type="text"/>
+        <button onclick="handleClick()">Click me!</button>
+        <script>
+            function handleClick() {
+                let query = document.getElementById('95861124').value;
+                console.log(query)
+                fetch("/query?cq=" + query)
+                    .then(response => response.text())
+                    .then(res => {
+                        document.getElementById('95861123').innerHTML = res
+                    });
+            }
+            
+        </script>
+    </body>
+</html>
