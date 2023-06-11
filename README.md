@@ -19,4 +19,4 @@ Cách dùng:
     }
     ```
 * Cài đặt ```npm install```
-* Chạy server ```node index.js```
+* Chạy server ```node index.js``` (Sau khi chạy có thể truy cập được bất kỳ .html trong thư mục public)
