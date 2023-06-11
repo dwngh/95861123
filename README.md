@@ -10,7 +10,6 @@ Cách dùng:
     ```js
     function handleClick() {
         let query = document.getElementById('95861124').value;
-        console.log(query)
         fetch("/query?cq=" + query)
             .then(response => response.text())
             .then(res => {
