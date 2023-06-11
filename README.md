@@ -19,3 +19,8 @@ Cách dùng:
     ```
 * Cài đặt ```npm install```
 * Chạy server ```node index.js``` (Sau khi chạy có thể truy cập được bất kỳ .html trong thư mục public)
+
+**Lưu ý**:
+ * Do Server chạy riêng rẽ nên hoàn toàn có thể chỉnh sửa như trên vào một HTML bất kỳ (không cần trong public) , tuy nhiên cần phải thay đổi ```URL``` của fetch trỏ tới đúng Server.
+ * Trong **public** đã có sẵn ```index.html``` có cơ bản chức năng rồi.
+ * Bing cũng có giới hạn nên tuy có thể sử dụng nhiều mục đích nhưng nên dùng cá nhân.
